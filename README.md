@@ -42,7 +42,7 @@ let pennyPincherGestureRecognizer = PennyPincherGestureRecognizer()
 pennyPincherGestureRecognizer.enableMultipleStrokes = true
 pennyPincherGestureRecognizer.allowedTimeBetweenMultipleStrokes = 0.2
 pennyPincherGestureRecognizer.cancelsTouchesInView = false
-pennyPincherGestureRecognizer.addTarget(self, action: "didRecognize:")
+pennyPincherGestureRecognizer.addTarget(self, action: #selector(didRecognize:))
 
 view.addGestureRecognizer(pennyPincherGestureRecognizer)
 ```
